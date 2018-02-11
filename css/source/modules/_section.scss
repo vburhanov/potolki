@@ -1,0 +1,56 @@
+//==================== section
+[class*="section-"] {
+  position: relative;
+  z-index: 1;
+}
+
+//==================== section heading
+.section-heading {
+  background: url('../images/heading-bg.jpg') no-repeat 50% 50% transparent;
+  padding: 50px 0 0px;
+  position: relative;
+  overflow: hidden;
+
+  h1 {
+    margin-bottom: 0px;
+  }
+}
+
+.bg-video-holder {
+  width: 2000px;
+  height: 100%;
+  background: url('../images/heading-bg.jpg') no-repeat 50% 0 $font-color;
+  background-size: 2000px auto !important;
+  margin-left: -1000px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 5;
+
+  video {
+    visibility: hidden;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.video-overlay {
+  @include abs-center;
+  background: transparentize(#000, .5);
+  z-index: 15;
+}
+
+//==================== section x
+.section-x {
+  background: url('../images/') no-repeat 50% 50% transparent;
+  padding: 0px 0 0px;
+
+  h2 {
+    margin-bottom: 0px;
+  }
+}
+
+//==================== section map
+.map-holder {
+  height: 0px;
+}
